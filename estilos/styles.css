@@ -1,0 +1,570 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'mackenzin';
+    src: url(../fonts/Mackenzin.otf) format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(#423a3a83, #00000063), url(../imagens/fundo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 130vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    background-color: #574e3ebd;
+    bottom:0;
+}
+
+.novas-atualizacoes {
+    background-color: #bdac8da2;
+    padding: 30px;
+    margin: 20px;
+    height: 550px;
+    width: 800px;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: 30px;
+
+}
+
+.noticias {
+    align-items: center;
+    position: absolute;
+    height: 550px;
+    width: 345px;
+    background-color: #bdac8da2;
+    padding: 25px;
+    right: 0;
+    margin: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.galery {
+    width: 293px;
+    height: 500px;
+    border: 1px solid grey;
+    margin: auto;
+}
+
+#galery1 {
+    background: url(../imagens/peakpx.jpg) center center no-repeat;
+}
+
+.description {
+    width: 240px;
+    margin: 30px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.521);
+    margin-top: 420px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.description:hover {
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.description>a {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.noticias#img-luffy {
+    position: absolute;
+    align-items: center;
+}
+
+.novas-atualizacoes>span {
+    background-image: linear-gradient(#574e3e, #574e3e);
+    position: absolute;
+    top: 10px;
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-align: center;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+span#mais-manga {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+    font-size: 15px;
+    top: 86%;
+    height: 40px;
+    background-color: #574e3e;
+    border-radius: 10px;
+    color: white;
+
+}
+
+span#mais-manga:hover {
+    background-color: #29251d;
+}
+
+
+#capa-manga {
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.container {
+    padding: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    position: relative;
+    top: -25px;
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px;
+    padding: 15px;
+}
+
+nav ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'mackenzin';
+    font-size: 19px;
+    border-radius: 30px;
+    transition: 0.6s;
+
+}
+
+nav ul li#home:hover {
+    background-color: #bdac8d;
+    border-radius: 30px;
+    transition: 0.1s;
+}
+
+nav ul li#personagenss:hover {
+    background-color: #bdac8d;
+    border-radius: 30px;
+    transition: 0.1s;
+}
+
+nav ul li#sobre:hover {
+    background-color: #bdac8d;
+    border-radius: 30px;
+    transition: 0.1s;
+}
+
+.sub-menu-personagens {
+    display: none;
+}
+
+nav ul li:hover .sub-menu-personagens {
+    display: block;
+    position: absolute;
+    background-color: #685b47e3;
+    margin-top: 20px;
+    margin-left: -13px;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+nav ul li:hover .sub-menu-personagens ul {
+    display: block;
+}
+
+nav ul li:hover .sub-menu-personagens ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.7s;
+}
+
+nav ul li:hover .sub-menu-personagens ul li:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.logo {
+    position: absolute;
+    font-family: 'mackenzin';
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
+
+
+a {
+    width: 100%;
+}
+
+.search>a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.search-box {
+    position: absolute;
+    right: 100px;
+
+    background-color: #bdac8d;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-text {
+    background: none;
+    border: 0;
+    outline: 0;
+
+    padding: 0;
+
+    font-size: 16px;
+
+    transition: 0.4s;
+
+    cursor: pointer;
+
+    width: 0;
+}
+
+.search-button {
+    width: 20px;
+    right: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box:hover>.search-text {
+    width: 200px;
+    padding-left: 20px;
+
+}
+
+::-webkit-input-placeholder {
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+.wiki-personagem {
+    background-color: #bdac8da2;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.info-personagem {
+    border: 1px solid black;
+    padding-top: 1em;
+    margin-top: 10px;
+    height: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15.5px;
+}
+
+.info-personagem>ul li {
+    color: black;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+#estreia {
+    margin-top: -15px;
+}
+
+#tipo {
+    border-bottom: 0;
+}
+
+.texto-personagem {
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    left: 29%;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: rgba(245, 245, 245, 0.705);
+    width: 900px;
+    height: auto;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.texto-personagem>h3 {
+    color: #29251d;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.texto-personagem a {
+    text-decoration: none;
+    color: #29251d;
+    font-weight: bold;
+}
+
+.texto-personagem a:hover{
+    color: #ffffff;
+}
+
+
+#foto-personagem {
+    background-color: #574e3e;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#icon-personagem{
+    background-color: #574e3e;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#nome-personagem {
+    background-color: #574e3e;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    border: 1px 1px 1px solid black;
+    box-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.box-personagens{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box-personagens article a:hover{
+    background-color:#1a1712 ;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+#icon-nami{
+    width: 150px;
+    height: 150px;
+    background-color:transparent;
+    padding: 5px;
+    margin: 20px;
+    margin-left: 20px;
+}
+
+#icon-chopper{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-franky{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-jinbe{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-robin{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-usopp{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 10px;
+    margin: 20px;
+}
+
+#icon-kaidou{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+#icon-roger{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-bigmom{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-law{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-kid{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-shanks{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-bb{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+}
+
+#icon-teach{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+#icon-yamato{
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+#icon-oden{
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    padding: 5px;
+    margin: 20px;
+    margin-right: 40px;
+}
+
+.box-sobre{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-sobre{
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.705);
+}
+
+.texto-sobre p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
